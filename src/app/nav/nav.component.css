@@ -1,0 +1,18 @@
+ li{
+     width: 18%
+ }
+ li a:hover {
+    background-color:rgba(255, 212, 19, 0.911);
+    color: white;
+  }
+  a{
+      text-align: center
+  }
+  li a.active {
+    color: white;
+    background-color: #4CAF50;
+  }
+  .log{
+      margin: 5px 7px;
+  }
+  

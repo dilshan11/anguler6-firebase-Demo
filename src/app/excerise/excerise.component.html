@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+        <label > sports</label>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let a of excer" (click)=startupdate(a.id)> {{a.name}}</li>
+  </ul>
+    </div>
+  <div class="col-md-6">
+      <form [formGroup]="sport">
+          <div class="form-group">
+              <label for="exampleInputEmail1"> name</label>
+              <input formControlName="name" type="text" class="form-control" id="exampleIutEmail" aria-describedby="emailHelp" placeholder="Enter email">
+              
+            </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input  formControlName="time" type="text" class="form-control" id="examputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input  formControlName="calories" type="text" class="form-control" id="exampleInd1" placeholder="Password">
+          </div>
+          
+          <button  class="btn btn-primary bottom" (click)=exupdate()>update</button>
+          <button  class="btn btn-primary bottom" (click)=exdelete()>Delete</button>
+        </form>
+  </div>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <button type="button" class="btn btn-warning" (click)=getdate()>Warning</button>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+</div>
